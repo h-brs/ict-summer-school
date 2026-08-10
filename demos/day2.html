@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>André's Digital Space</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: system-ui, sans-serif;
+      line-height: 1.6;
+      color: #243447;
+      background: #f4f7f9;
+    }
+
+    header {
+      padding: 4rem 2rem;
+      text-align: center;
+      color: white;
+      background: #173f5f;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 3rem;
+    }
+
+    header p {
+      font-size: 1.2rem;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .layout {
+      display: flex;
+      gap: 3rem;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 4rem 3rem;
+    }
+
+    main {
+      flex: 1;
+      min-width: 0;
+    }
+
+    section {
+      margin-bottom: 4rem;
+    }
+
+    section h2 {
+      margin-bottom: 1.5rem;
+      color: #173f5f;
+      font-size: 2rem;
+    }
+
+    /* Interest cards */
+
+    #interests > div {
+      display: flex;
+      gap: 1.5rem;
+    }
+
+    #interests article {
+      flex: 1;
+      padding: 1.5rem;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    }
+
+    #interests article h3 {
+      margin-top: 0;
+      color: #173f5f;
+    }
+
+    /* Profile picture */
+
+    #about img {
+      width: 180px;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 50%;
+    }
+
+    /* Table */
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background: white;
+    }
+
+    th,
+    td {
+      padding: 0.75rem;
+      text-align: left;
+      border-bottom: 1px solid #ddd;
+    }
+
+    th {
+      color: white;
+      background: #173f5f;
+    }
+
+    /* Media */
+
+    audio,
+    video {
+      max-width: 100%;
+    }
+
+    /* Form */
+
+    form {
+      max-width: 600px;
+      padding: 2rem;
+      background: white;
+      border-radius: 12px;
+    }
+
+    label {
+      display: block;
+      margin-top: 1rem;
+      font-weight: bold;
+    }
+
+    input,
+    textarea,
+    select {
+      width: 100%;
+      padding: 0.75rem;
+      margin-top: 0.25rem;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font: inherit;
+    }
+
+    button {
+      margin-top: 1rem;
+      padding: 0.75rem 1.5rem;
+      border: 0;
+      border-radius: 6px;
+      color: white;
+      background: #173f5f;
+      font: inherit;
+      cursor: pointer;
+    }
+
+    /* Sidebar */
+
+    aside {
+      flex: 0 0 260px;
+      padding: 1.5rem;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+      align-self: flex-start;
+    }
+
+    aside h2,
+    aside h3,
+    aside h4 {
+      color: #173f5f;
+    }
+
+    /* Footer */
+
+    footer {
+      padding: 2rem;
+      text-align: center;
+      color: white;
+      background: #102a43;
+    }
+
+    /* Responsive design */
+
+    @media (max-width: 800px) {
+
+      .layout {
+        flex-direction: column;
+        padding: 3rem 2rem;
+      }
+
+      aside {
+        flex-basis: auto;
+        width: 100%;
+      }
+
+      #interests > div {
+        flex-direction: column;
+      }
+
+    }
+
+    @media (max-width: 500px) {
+
+      header {
+        padding: 3rem 1rem;
+      }
+
+      header h1 {
+        font-size: 2rem;
+      }
+
+      nav {
+        flex-direction: column;
+        gap: 0.5rem;
+      }
+
+      .layout {
+        padding: 2rem 1rem;
+      }
+
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>André's Digital Space</h1>
+  <p>Web Development · Teaching · Digital Makerspaces</p>
+
+  <nav>
+    <a href="#">About Me</a>
+    <a href="#">Interests</a>
+    <a href="#">Media</a>
+    <a href="#">Contact</a>
+  </nav>
+</header>
+
+<div class="layout">
+
+  <main>
+
+    <section>
+      <h2>Welcome!</h2>
+
+      <p>
+        Hello! My name is André and this is my personal website.
+      </p>
+
+      <p>
+        I'm a lecturer at Hochschule Bonn-Rhein-Sieg
+        University of Applied Sciences.
+      </p>
+
+      <p>
+        This week, I'm exploring
+        <span>web development</span>
+        and digital makerspaces.
+      </p>
+    </section>
+
+    <section>
+      <h2>About Me</h2>
+
+      <img src="../assets/akless.png" alt="Photo of André" width="250">
+
+      <p>
+        I'm 41 years old and a father of four children.
+        I teach programming, software engineering and web engineering.
+      </p>
+
+      <h3>Things I enjoy</h3>
+
+      <ul>
+        <li>Teaching</li>
+        <li>Web development</li>
+        <li>Open source software</li>
+        <li>Digital Makerspaces</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>My Technology Journey</h2>
+
+      <h3>Technologies I work with</h3>
+
+      <ol>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>CCM</li>
+      </ol>
+
+      <h4>What they are good for</h4>
+
+      <table>
+        <tr>
+          <th>Technology</th>
+          <th>Purpose</th>
+        </tr>
+        <tr>
+          <td>HTML</td>
+          <td>Structure</td>
+        </tr>
+        <tr>
+          <td>CSS</td>
+          <td>Appearance</td>
+        </tr>
+        <tr>
+          <td>JavaScript</td>
+          <td>Interaction</td>
+        </tr>
+      </table>
+    </section>
+
+    <section>
+      <h2>Media</h2>
+
+      <h3>Something to listen to</h3>
+
+      <audio controls>
+        <source src="../assets/Offshore.ogg" type="audio/mpeg">
+        Your browser does not support audio.
+      </audio>
+
+      <h3>Something to watch</h3>
+
+      <video controls width="500">
+        <source src="../assets/BigBuckBunny.mp4" type="video/mp4">
+        Your browser does not support video.
+      </video>
+    </section>
+
+    <section>
+      <h2>Get in Touch</h2>
+
+      <form>
+        <fieldset>
+          <legend>Send me a message</legend>
+
+          <label for="name">Your name:</label>
+          <input type="text" id="name">
+
+          <br>
+
+          <label for="topic">Topic:</label>
+          <select id="topic">
+            <option>Web Development</option>
+            <option>Teaching</option>
+            <option>Digital Makerspaces</option>
+            <option>Something else</option>
+          </select>
+
+          <br>
+
+          <label for="message">Your message:</label>
+          <br>
+          <textarea id="message" rows="5" cols="40"></textarea>
+
+          <br>
+
+          <button type="submit">Send message</button>
+        </fieldset>
+      </form>
+    </section>
+
+  </main>
+
+  <aside>
+    <h2>Quick Facts</h2>
+
+    <ul>
+      <li>🇩🇪 Based in Germany</li>
+      <li>🎓 University Lecturer</li>
+      <li>👨‍👩‍👧‍👦 Father of four</li>
+      <li>💻 Web enthusiast</li>
+    </ul>
+
+    <h3>Currently</h3>
+
+    <p>
+      Teaching at the ICT Summer School
+      in Finland.
+    </p>
+
+    <h4>Fun fact</h4>
+
+    <p>
+      I am trying to bring a board game to Finland.
+    </p>
+  </aside>
+
+</div>
+
+<footer>
+  <p>© 2026 André Kless</p>
+  <p>Built with HTML</p>
+</footer>
+
+</body>
+</html>
