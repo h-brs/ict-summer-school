@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Quiz</title>
+</head>
+<body>
+  <h2>Quick Quiz</h2>
+  <p>What does HTML define?</p>
+  <button id="answer1">The structure</button>
+  <button id="answer2">The colors</button>
+  <button id="answer3">The behaviour</button>
+  <p id="result"></p>
+
+  <script>
+    const result = document.getElementById("result");
+    document.getElementById("answer1").addEventListener("click", () => {
+      result.textContent = "Correct! 🎉";
+    });
+    document.getElementById("answer2").addEventListener("click", () => {
+      result.textContent = "Not quite!";
+    });
+    document.getElementById("answer3").addEventListener("click", () => {
+      result.textContent = "Not quite!";
+    });
+  </script>
+</body>
+</html>
