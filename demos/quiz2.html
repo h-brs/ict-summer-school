@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <script src="https://ccmjs.github.io/ccm/ccm.js"></script>
+  <script type="module">
+    const comp = "https://ccmjs.github.io/eild/mc/ccm.mc.js";
+    const config = {
+      questions: [
+        {
+          text: "What is HTML?",
+          answers: [
+            { text: "Programming Language" },
+            { text: "Markup Language", solution: true },
+            { text: "Something to eat" }
+          ]
+        }
+      ],
+      feedback: true,
+      onfinish: { restart: true }
+    };
+    const elem = document.body;
+    ccm.start(comp, config, elem);
+  </script>
+</head>
+<body></body>
+</html>
